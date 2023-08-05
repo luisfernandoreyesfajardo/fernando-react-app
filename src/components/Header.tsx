@@ -13,7 +13,7 @@ export const Header = (props: Props) => {
   const { setPerfil } = props;
 
   return (
-    <header className="flex items-center justify-between p-2 text-lg text-center text-white uppercase border-b-8 shadow-lg select-none bg-cyan-600 border-violet-800 shadow-slate-400">
+    <header className="flex items-center justify-between p-2 text-lg text-center text-white uppercase border-b-8 shadow-lg select-none bg-black border-cyan shadow-slate-400">
       <span
         onClick={() => setMostrar(1)}
         className="hover:cursor-pointer hover:text-rose-400 active:text-yellow-400">
@@ -22,13 +22,13 @@ export const Header = (props: Props) => {
 
       <div>
         <h1 className="font-bold">
-          Reservaciones de eventos y compras en l&iacute;nea
+          Reservaciones de eventos y compras online
         </h1>
         <p>Comercial "La econ&oacute;mica"</p>
       </div>
 
       <span onClick={()=> setPerfil(1)} className="hover:cursor-pointer hover:text-rose-400 active:text-yellow-400">
-        <MdOutlinePersonPin size={40} />
+        <MdOutlinePersonPin size={50} />
       </span>
       <div
         onClick={() => setPerfil(0)}
